@@ -38,6 +38,11 @@ public class Main {
 
     // Super: Product, SubClass: VegetableProduct
 
+    // In Java, Every class's parent class is Object.class. Class Object is the root of the class hierarchy.
+    // - Every class has Object as a superclass.
+    // - All objects, including arrays, implement the methods of this class
+
+
     public static void main(String[] args) {
         Product tomato;
         tomato = new VegetableProduct(1, "Tomat", Color.RED);      // OOP: polymorphism
@@ -51,16 +56,17 @@ public class Main {
         new Product(3, "Egg");                                      // object created using new keyword along with class's constructor
 
         System.out.println("-----------------");
-        System.out.println("id: " + tomato.getId());
-        System.out.println("name: " + tomato.getName());
-        System.out.println("description: " + tomato.getDescription());
-//      System.out.println("color: " + tomato.getColor()); // unable to call getColor(), as the variable type is Product.
+        System.out.println(tomato);
         System.out.println("-----------------");
-        System.out.println("id: " + potato.getId());
-        System.out.println("name: " + potato.getName());
-        System.out.println("description: " + potato.getDescription());
-        System.out.println("color: " + potato.getColor());
+        System.out.println(potato);
         System.out.println("-----------------");
+
+
+        ShoppingCart myShoppingCart = new ShoppingCart();
+        myShoppingCart.addProduct(tomato);
+        myShoppingCart.addProduct(potato);
+        myShoppingCart.checkout();
+        myShoppingCart.print();
 
         // to replicate product app we used infinite loop
         while (true) {

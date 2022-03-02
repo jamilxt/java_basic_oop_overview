@@ -23,17 +23,28 @@ public class VegetableProduct extends Product { // is-a relationship: "Vegetable
 //        super.setName(name);
 //    }
 
-    // OOP: polymorphism: overriding
-    @Override // an annotation: In object-oriented terms, overriding means to override the functionality of an existing method
+    // OOP: polymorphism: overriding: if we override parent's exact method
+    @Override
+    // an annotation: In object-oriented terms, overriding means to override the functionality of an existing method
     public void setDescription(String description) {
         String myDescription = "[Overriding] (Vegetable): ";
         // apply more business logic
         super.setDescription(myDescription + description);
     }
 
-    // OOP: polymorphism: overloading
+    // OOP: polymorphism: overloading: same method name, return type
     public void setDescription(String description, String secondDescription) {
         String myDescription = "[Overloading] (Vegetable): ";
         super.setDescription(myDescription + description);
+    }
+
+    @Override
+    public String toString() {
+        return "VegetableProduct{" +
+                "id=" + this.getId() +
+                ", name='" + this.getName() + '\'' +
+                ", description='" + this.getDescription() + '\'' +
+                ", color='" + this.color + '\'' +
+                '}';
     }
 }
