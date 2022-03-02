@@ -39,14 +39,14 @@ public class Main {
     // Super: Product, SubClass: VegetableProduct
 
     public static void main(String[] args) {
-        Product tomato;                                                     // variable declare
-        tomato = new VegetableProduct(1, "Tomat", Color.RED);      // first create object from "Product",
+        Product tomato;
+        tomato = new VegetableProduct(1, "Tomat", Color.RED);      // OOP: polymorphism
         tomato.setName("Tomato");
-        tomato.setDescription("This is good");                              // then initialize the object in "tomato" variable which type is "Product"
+        tomato.setDescription("This is good");
 
-        VegetableProduct potato;
-        potato = new VegetableProduct(2, "Potato", Color.GRAY);
-        potato.setDescription("This is good");
+        VegetableProduct potato;                                            // variable declare
+        potato = new VegetableProduct(2, "Potato", Color.GRAY);     // first create object from "Product", then initialize the object in "potato" variable which type is "Product"
+        potato.setDescription("This is good", "this is also good");
 
         new Product(3, "Egg");                                      // object created using new keyword along with class's constructor
 
