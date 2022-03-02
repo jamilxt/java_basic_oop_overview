@@ -32,6 +32,13 @@ public class VegetableProduct extends Product { // is-a relationship: "Vegetable
         super.setDescription(myDescription + description);
     }
 
+    @Override
+    public void verifyHealthiness() {
+        System.out.println("Healthiness is verifying...");
+        // other business logic
+        System.out.println("Healthiness is verified");
+    }
+
     // OOP: polymorphism: overloading: same method name, return type
     public void setDescription(String description, String secondDescription) {
         String myDescription = "[Overloading] (Vegetable): ";

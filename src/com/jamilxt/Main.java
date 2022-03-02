@@ -53,8 +53,6 @@ public class Main {
         potato = new VegetableProduct(2, "Potato", Color.GRAY);     // first create object from "Product", then initialize the object in "potato" variable which type is "Product"
         potato.setDescription("This is good", "this is also good");
 
-        new Product(3, "Egg");                                      // object created using new keyword along with class's constructor
-
         System.out.println("-----------------");
         System.out.println(tomato);
         System.out.println("-----------------");
