@@ -1,5 +1,10 @@
 package com.jamilxt;
 
+import com.jamilxt.enums.Color;
+import com.jamilxt.model.Product;
+import com.jamilxt.model.ShoppingCart;
+import com.jamilxt.model.VegetableProduct;
+
 public class Main {
     // programming language concepts: state machine
 

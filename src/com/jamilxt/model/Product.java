@@ -1,4 +1,4 @@
-package com.jamilxt;
+package com.jamilxt.model;
 
 // OOP: Encapsulation
 // Abstraction class doesn't provide full abstraction, as we can implement the method body

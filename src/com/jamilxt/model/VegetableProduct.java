@@ -1,7 +1,9 @@
-package com.jamilxt;
+package com.jamilxt.model;
 
 // OOP: Inheritance
 // 1) Multiple Class can't be extended
+
+import com.jamilxt.enums.Color;
 
 // Subclass of Product
 public class VegetableProduct extends Product { // is-a relationship: "VegetableProduct" is a "Product"

@@ -1,5 +1,8 @@
-package com.jamilxt;
+package com.jamilxt.model;
 
+
+import com.jamilxt.feature.CheckoutFeature;
+import com.jamilxt.feature.Printer;
 
 import java.util.ArrayList;
 import java.util.List;

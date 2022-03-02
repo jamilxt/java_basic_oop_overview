@@ -1,4 +1,4 @@
-package com.jamilxt;
+package com.jamilxt.feature;
 
 // Interface provides full abstraction
 // An interface is not extended by a class; it is implemented by a class.

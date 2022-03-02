@@ -1,4 +1,4 @@
-package com.jamilxt;
+package com.jamilxt.feature;
 
 /**
  * @author jamilxt
