@@ -1,10 +1,17 @@
 package com.jamilxt;
 
-public class VegetableProduct extends Product {
-    private String color;
+// OOP: Inheritance
+// 1) Multiple Class can't be extended
 
-    public VegetableProduct(int id, String name, String color) {
+public class VegetableProduct extends Product {
+    private Color color;
+
+    public VegetableProduct(int id, String name, Color color) {
         super(id, name);
         this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
     }
 }

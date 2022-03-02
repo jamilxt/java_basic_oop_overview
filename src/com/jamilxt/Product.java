@@ -1,11 +1,11 @@
 package com.jamilxt;
 
+// OOP: Encapsulation
 public class Product {
     // attribute
     private int id; // by default: 0
     private String name; // by default: null
     private String description; // by default: null
-
     // default constructor
 
     // constructor with parameters

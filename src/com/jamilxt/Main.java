@@ -1,10 +1,10 @@
 package com.jamilxt;
 
 public class Main {
-    // state machine
+    // programming language concepts: state machine
 
-    // interpreter (each statement will be processed/converted one by one)
-    // compiler (statements will be processed/converted to machine language at once)
+    // interpreter: each statement can be executed one by one
+    // compiler: to run a program, all statements need to be executed at once
 
     // JVM = Java Virtual Machine
     // JRE = Java Runtime Environment
@@ -37,22 +37,24 @@ public class Main {
     // difference between method's parameter (value type) & argument (actual value)
 
     public static void main(String[] args) {
-        Product tomato;                             // variable declare
-        tomato = new Product(1, "Tomato");  // first create object from "Product",
-        // then initialize the object in "tomato" variable which type is "Product"
-        Product potato;
-        potato = new Product(2, "Potato");
+        Product tomato;                                                     // variable declare
+        tomato = new VegetableProduct(1, "Tomato", Color.RED);    // first create object from "Product",
+                                                                            // then initialize the object in "tomato" variable which type is "Product"
+        VegetableProduct potato;
+        potato = new VegetableProduct(2, "Potato", Color.GRAY);
 
-        new Product(3, "Egg");              // object created using new keyword along with class's constructor
+        new Product(3, "Egg");                                      // object created using new keyword along with class's constructor
 
         System.out.println("-----------------");
         System.out.println("id: " + tomato.getId());
         System.out.println("name: " + tomato.getName());
         System.out.println("description: " + tomato.getDescription());
+//      System.out.println("color: " + tomato.getColor()); // unable to call getColor(), as the variable type is Product.
         System.out.println("-----------------");
         System.out.println("id: " + potato.getId());
         System.out.println("name: " + potato.getName());
         System.out.println("description: " + potato.getDescription());
+        System.out.println("color: " + potato.getColor());
         System.out.println("-----------------");
 
         // to replicate product app we used infinite loop
