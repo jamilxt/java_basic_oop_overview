@@ -23,6 +23,10 @@ public class Product {
         return name;
     }
 
+    public final void setName(String name) {
+        this.name = name;
+    }
+
     public String getDescription() {
         return description;
     }

@@ -17,7 +17,7 @@ public class Main {
     // Java is a statically-typed programming language. (Python, Javascript is dynamically programming language)
     // But, since Java 10, we can declare "var" to use dynamic typing which is called "Type Inference"
 
-    // keyword: new, static
+    // keyword: new, static, var, while, enum, extends
 
     // Primitive Type (8): int, byte, short, long, float, double, boolean, and char
     // Primitive Wrapper Class (8): Integer, Byte, Short, Long, Float, Double, Boolean and Character
@@ -36,12 +36,17 @@ public class Main {
 
     // difference between method's parameter (value type) & argument (actual value)
 
+    // Super: Product, SubClass: VegetableProduct
+
     public static void main(String[] args) {
         Product tomato;                                                     // variable declare
-        tomato = new VegetableProduct(1, "Tomato", Color.RED);    // first create object from "Product",
-                                                                            // then initialize the object in "tomato" variable which type is "Product"
+        tomato = new VegetableProduct(1, "Tomat", Color.RED);      // first create object from "Product",
+        tomato.setName("Tomato");
+        tomato.setDescription("This is good");                              // then initialize the object in "tomato" variable which type is "Product"
+
         VegetableProduct potato;
         potato = new VegetableProduct(2, "Potato", Color.GRAY);
+        potato.setDescription("This is good");
 
         new Product(3, "Egg");                                      // object created using new keyword along with class's constructor
 
